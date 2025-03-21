@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+          
+        body {
+            background-color: #181818;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #222;
+            padding: 20px 30px;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            height: 88vh;
+            padding: 50px;
+        }
+        .hero img {
+            width: 100%;
+            height: 88vh;
+            object-fit: cover;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            color: #bbb;
+        }
+        .btn-custom {
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-custom:hover {
+            background: #ddd;
+        }
+        .play-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .play-btn i {
+            margin-right: 5px;
+        }
+
+         /*  introduction Section     */
+         .introduction {
+            padding: 80px 40px;
+            background: #222;
+        }
+        .introduction h2 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .introduction p {
+            font-size: 1.2rem;
+            color: #bbb;
+        }
+        .introduction-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .introduction img {
+            width: 50%;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: right;
+            padding: 10px;
+            background: #222;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+                padding: 20px;
+            }
+            .hero img {
+                height: auto;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .introduction-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .introduction img {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Adeline Palmerston</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav h2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home |</a></li>
+                <li class="nav-item"><a class="nav-link" href="Introduction.html">Photo |</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Me |</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact |</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero container-fluid">
+            <div class="introduction-content row">
+                <div class="col-lg-6">
+                    <h2>Introduction</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://picsum.photos/300" alt="Introduction Image" class="img-fluid">
+                </div>
+            </div>
+    </section>
+
+    <footer class="text-center text-light py-3" style="background-color: #1e1e1e;">
+        <p>Page | 02</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

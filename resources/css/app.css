@@ -1,0 +1,292 @@
+body {
+    background-color: #181818;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 20px 30px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 88vh;
+    padding: 50px;
+}
+
+.hero .img {
+    width: 100%;
+    height: 88vh;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+/* General Styling */
+
+.hero p {
+    color: #bbb;
+}
+
+.btn-custom {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-custom:hover {
+    background: #ddd;
+}
+
+.play-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.play-btn i {
+    margin-right: 5px;
+}
+
+
+
+.footer {
+    text-align: right;
+    padding: 10px;
+    background: #222;
+    font-size: 0.9rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero .img {
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+/* Project & Blog Section */
+
+/* Button Filter Styles */
+.btn-filter {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-filter.active {
+    background-color: #ff9800;
+    color: black;
+}
+
+
+/* Ensure all cards have the same height */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Ensure all images are the same size and cover */
+.card-img-top {
+    height: 200px;
+    /* Fixed height for images */
+    object-fit: cover;
+}
+
+
+/* Dark Theme */
+.resume {
+    background: #1a1a1a;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #fbc02d;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #fbc02d;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.timeline-item .dot {
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background: #fbc02d;
+    border-radius: 50%;
+}
+
+.content {
+    background: #222;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Skills */
+/* Dark Theme */
+.skills {
+    background: #1a1a1a;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 3px solid #fbc02d;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Skill Grid */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.skill-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1.2s ease-out;
+}
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slideIn {
+    animation: slideIn 1s ease-out;
+}
+
+
+/* General Styling */
+
+
+
+/* Profile Image */
+.profile-img {
+    width: 100%;
+    max-width: 250px; 
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Details Styling */
+.details-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+.details-list i {
+    margin-right: 8px;
+    color: #ffc107;
+}
+
+/* Work Box Styling */
+.work-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    min-height: 200px; 
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.work-box:hover {
+    transform: translateY(-5px);
+}

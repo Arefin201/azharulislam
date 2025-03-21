@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #181818;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #222;
+            padding: 20px 30px;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            height: 88vh;
+            padding: 50px;
+        }
+        .hero img {
+            width: 100%;
+            height: 88vh;
+            object-fit: cover;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            color: #bbb;
+        }
+        .btn-custom {
+            background: white;
+            color: black;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-custom:hover {
+            background: #ddd;
+        }
+        .play-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .play-btn i {
+            margin-right: 5px;
+        }
+
+      
+
+        .footer {
+            text-align: right;
+            padding: 10px;
+            background: #222;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                height: auto;
+                padding: 20px;
+            }
+            .hero img {
+                height: auto;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Adeline Palmerston</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav h2">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home |</a></li>
+                <li class="nav-item"><a class="nav-link" href="Introduction.html">Photo |</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Me |</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact |</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="hero container-fluid">
+        <div class="row w-100">
+            <div class="col-md-6 p-0">
+                <img src="https://picsum.photos/300" alt="Profile" class="img-fluid h-70">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center p-5">
+                <h1>My <br> Portfolio</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="d-flex align-items-center mt-3">
+                    <button class="btn btn-custom">Explore Now</button>
+                    <button class="play-btn ms-3"><i class="fas fa-play"></i>Play Video</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        Page | 01
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
